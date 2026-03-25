@@ -1,1 +1,565 @@
+/* ULTIMO DIA DE PROMOÇÃO */
+.holder-cols-checkout .holder-container-resume .item-holder-quantity-price::after {
+content: "APROVEITE A OFERTA";
+font-size: 11px;
+padding: 3px 5px;
+color:#FFF;
+font-weight: 600;
+background: var(--discount-tag-bg-color);
+border-radius: 4px;
+display: inline-block;
+align-self: end;
+margin-left: 3px;
+}
 
+/* INÍCIO CÓDIGO - INFORMAÇÕES/ENTREGA/PAGAMENTO */
+
+.checkout-step.enabled .connect, .checkout-step.enabled .holder-icon {
+    background: linear-gradient(0deg, #000000 0%, #FFC107 100%);
+}
+
+li.checkout-step:nth-child(1) > div:nth-child(2):after {
+    content: ""; /* imagem informações pessoais */
+    text-indent: -1px;
+    display: block;
+    color: #000;
+    line-height: 0px;
+    margin-top: -12px;
+    background: url("https://cdn.shopify.com/s/files/1/0521/6514/8855/files/user_white.svg?v=1661427489") no-repeat center center;
+    height:20px;
+}
+
+.checkout-step .holder-icon {
+    width: 40px;
+    height: 40px;
+    background: #FFF; /* circulo de informações, frete e pagamento */
+    border:2px solid #fff; /* cor da borda dos circulos */
+    color:#000000; /* cor do texto */
+    margin-bottom: 6px;
+    text-indent:-9999px;
+}
+
+.checkout-step .connect {
+    background-color: #e1e1e1; /* cor dos circulos apagados */
+    top:22px;
+}
+li.checkout-step:nth-child(2) > div:nth-child(2):after {
+    height: 26px;
+    background: url("https://cdn.shopify.com/s/files/1/0521/6514/8855/files/card_grey.svg?v=1661429244") no-repeat center center;
+    content: "";
+    text-indent: -1px;
+    display: block;
+    color: #000;
+    line-height: 0px;
+    margin-top: -15px;
+    margin-left: 2px;
+}
+
+li.checkout-step.enabled:nth-child(2) > div:nth-child(2):after {
+    content: "";
+    background: url("https://cdn.shopify.com/s/files/1/0521/6514/8855/files/card_white.svg?v=1661429244") no-repeat center center; /* imagem frete branca */
+}
+
+
+li.checkout-step:nth-child(3) > div:nth-child(2):after {
+    height: 26px;
+    background: url("https://cdn.shopify.com/s/files/1/0521/6514/8855/files/card_grey.svg?v=1661429244") no-repeat center center;
+    content: ""; /* imagem pagamento */
+    text-indent: -1px;
+    display: block;
+    color: #000;
+    line-height: 0px;
+    margin-top: -15px;
+    margin-left: 0;
+}
+
+li.checkout-step.enabled:nth-child(3) > div:nth-child(2):after {
+    content: "";
+    background: url("https://cdn.shopify.com/s/files/1/0521/6514/8855/files/card_white.svg?v=1661429244") no-repeat center center; /* imagem pagamento branca */
+}
+
+/* FINAL CÓDIGO - INFORMAÇÕES/ENTREGA/PAGAMENTO */
+
+
+/* LINHA COLORIDA */
+
+.holder-countdown::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to right, #000000 0, #000000 4%, #000000 5%, #FFC107 50%, #000000 84%, #000000 119%);
+    height: 5px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.holder-countdown{
+
+  padding: 9px 0 !important;
+
+  font-size: 16px !important;
+
+}
+
+
+/* ICONES CORREIOS */
+
+.option.clearfix {
+	background-image: url(https://www.propeg.com.br/ad-viewer/Correios/Integrada/macbook.png)!important;
+    background-size: 27px!important;
+    content: ""!important;
+    background-repeat: no-repeat!important;
+    background-position-x: 145px!important;
+    background-position-y: 90%!important;
+}
+
+ /* TAMANHO PREÇO */
+.holder-cols-checkout .cart-resume .detail.total .value {
+    font-size: 22px;
+    color: #5DE021;
+}
+
+/* APROVAÇÃO IMEDIATA */
+
+.payments .payment > label {
+	position: relative;
+	display: flex;
+}
+
+.payments .payment > label[for="payment-pix"]:after,
+.payments .payment > label[for="payment-credit-card"]:after
+{
+    background: #5DE021;
+    display: block;
+    line-height: inherit;
+    color: #FFF;
+    padding: 4px 5px;
+    border-radius: 3px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 9px;
+    right: 3px;
+    letter-spacing: 0.03em;
+    top: 26%;
+    content: 'APROVAÇÃO IMEDIATA';
+}
+
+.payments .payment > label[for="payment-credit-card"]:after {
+	top: 13%;
+}
+
+/* INÍCIO DO CÓDIGO - NOVO VISUAL CARTÃO DE CRÉDITO */
+
+.jp-card .jp-card-front .jp-card-shiny, .jp-card .jp-card-back .jp-card-shiny {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    background: #CCC;
+    position: relative;
+    opacity: 0;
+}
+
+.jp-card .jp-card-front {
+    background: url("https://cdn.shopify.com/s/files/1/0294/0374/2339/files/card-front.png?v=1618002695") no-repeat !important;
+}
+
+.jp-card .jp-card-back {
+    background: url("https://cdn.shopify.com/s/files/1/0294/0374/2339/files/card-back.png?v=1618002712") no-repeat !important;
+    background-size:100% !important;
+}
+
+.jp-card .jp-card-back::after {
+    opacity:0 !important;
+}
+
+.jp-card .jp-card-back .jp-card-bar {
+    opacity:0 !important;
+}
+
+.jp-card .jp-card-back .jp-card-cvc {
+    top: 52% !important;
+    left:80% !important;
+    color:#000 !important;
+}
+
+.jp-card.jp-card-mastercard.jp-card-identified .jp-card-front::before, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back::before {
+    background:transparent !important;
+}
+
+.jp-card.jp-card-safari.jp-card-identified .jp-card-front::before, .jp-card.jp-card-safari.jp-card-identified .jp-card-back::before {
+    background-image:none !important;
+}
+
+.jp-card.jp-card-identified .jp-card-front::before, .jp-card.jp-card-identified .jp-card-back::before {
+    background-image:none !important;
+}
+
+.jp-card.jp-card-identified .jp-card-back, .jp-card.jp-card-identified .jp-card-front {
+    background-color:transparent !important;
+}
+
+/* FINAL DO CÓDIGO - NOVO VISUAL CARTÃO DE CRÉDITO */
+
+
+/* --- VERSÃO FINALÍSSIMA E CORRIGIDA - AGORA VAI! --- */
+
+/* ==========================================================================
+   PARTE 1: ESTRUTURA, LAYOUT E RESET DO CARROSSEL
+   ========================================================================== */
+
+/* Esconde DEFINITIVAMENTE os botões de navegação e os "pontinhos" */
+.owl-navigation_button,
+.owl-orderbumps .owl-dots {
+    display: none !important;
+}
+
+/* Estilo do container principal que engloba tudo */
+.holder-recomm {
+    border: 2px dashed var(--main-color);
+    height: auto !important;
+}
+
+/* Corrige a "janela" do carrossel para não cortar o conteúdo */
+.owl-stage-outer {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: unset !important;
+}
+
+/* Organiza os itens em uma coluna vertical */
+.owl-stage {
+    display: flex !important;
+    flex-direction: column !important;
+    transform: none !important;
+    width: 100% !important;
+}
+
+/* Ajusta cada item e força sua visibilidade */
+.owl-item {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    float: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.owl-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   PARTE 2: ESTILO DOS CARDS E WORKAROUND DA IMAGEM
+   ========================================================================== */
+
+/* Estilo do card individual */
+.orderbump {
+    background-color: #fffaef;
+    border-radius: 15px;
+}
+
+/* Textos e preço */
+.orderbumps_offer-title, .orderbumps_offer-total {
+    color: var(--main-color) !important;
+    background-color: #FFF;
+}
+.orderbump_price {
+    color: #5DE021 !important;
+}
+
+/* Botão de adicionar */
+.orderbump_button {
+    background-color: #ffc107 !important;
+    padding: 13px 10px 9px;
+}
+
+.orderbump_disclaimer {
+    display: none !important;
+}
+
+/* --- WORKAROUND DA IMAGEM (COM O SELETOR CORRETO) --- */
+
+/* 1. Esconde a tag <img> original que não carrega */
+.orderbump_product-image {
+    display: none !important;
+}
+
+/* 2. Prepara o container da imagem para receber um fundo */
+.orderbump_product > div:first-child {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-right: 15px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+
+/* ==========================================================================
+   PARTE 3: EDIÇÃO MANUAL OBRIGATÓRIA (INSIRA AS URLS DAS IMAGENS)
+   ========================================================================== */
+/*
+ * INSTRUÇÃO: Para cada um dos 4 blocos abaixo, substitua o texto
+ * 'COLE_A_URL_COMPLETA_DA_IMAGEM_X_AQUI' pela URL real da imagem.
+*/
+
+/* Imagem para o PRIMEIRO order bump */
+.owl-item:nth-child(1) .orderbump_product > div:first-child {
+    background-image: url('https://i.ibb.co/mFdM9ytZ/IMG-4984.png');
+}
+
+/* Imagem para o SEGUNDO order bump */
+.owl-item:nth-child(2) .orderbump_product > div:first-child {
+    background-image: url('https://images.yampi.me/assets/stores/guizera-negocios-digitais/uploads/images/fps-a-milhao-sem-root-67f687067728a-thumb.png');
+}
+
+/* Imagem para o TERCEIRO order bump */
+.owl-item:nth-child(3) .orderbump_product > div:first-child {
+    background-image: url('https://images.yampi.me/assets/stores/guizera-negocios-digitais/uploads/images/metodo-da-2x-67f16cf2cd3ed-small.png');
+}
+
+/* Imagem para o QUARTO order bump */
+.owl-item:nth-child(4) .orderbump_product > div:first-child {
+    background-image: url('https://i.ibb.co/HDQY36Fp/IMG-4984.png');
+}
+/* final css order bump */
+
+.holder-cols-checkout .box-checkout {
+    border: 1px solid transparent;
+   }
+
+.holder-cols-checkout .box-checkout.box-resume {
+    width: auto;
+    margin: 0 -1px 20px;    
+    padding-left: 14px;
+    padding-right: 14px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 6PX;
+    box-shadow:0 1px 4px 0 rgb(0 0 0 / 17%);
+}
+
+.btn-text.btn-purple /* COR DO BOTÃO DE CUPOM - ALTERAR SE PREFEIR */ {
+    color: #ffffff;
+    background: #bdbdbd;
+      border-radius: 25PX;
+}
+
+.col-checkout:not(.col-3) .box-checkout.active:not(.upsell) {
+    width: auto;
+    border: 0;
+    box-shadow: none;
+    border-radius: 6PX;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 17%);
+}
+.container-testimonials .testimonials {
+    padding: 20px 21px;
+    background: #FFF;
+    border-radius: 6PX;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 17%);
+    width: auto;
+    margin: 0 -8px 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+}
+.container-testimonials {
+    max-width: 680px!important;
+    box-shadow: 0 4px 12px rgb(244 246 248);
+}
+
+.holder-cols-checkout .box-checkout.active .title {
+    color: 2f2f2f !important;
+}
+
+
+.holder-cols-checkout .box-checkout.box-resume {
+    width: auto;
+    margin: 0 -1px 20px;    
+    padding-left: 14px;
+    padding-right: 14px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 6PX;
+    box-shadow:0 1px 4px 0 rgb(0 0 0 / 17%);
+}
+
+.btn-text.btn-purple /* COR DO BOTÃO DE CUPOM - ALTERAR SE PREFEIR */ {
+    color: #ffffff;
+    background: #bdbdbd;
+      border-radius: 25PX;
+}
+
+.col-checkout:not(.col-3) .box-checkout.active:not(.upsell) {
+    width: auto;
+    border: 0;
+    box-shadow: none;
+    border-radius: 6PX;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 17%);
+}
+.container-testimonials .testimonials {
+    padding: 20px 21px;
+    background: #FFF;
+    border-radius: 6PX;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 17%);
+    width: auto;
+    margin: 0 -8px 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+}
+.container-testimonials {
+    max-width: 680px!important;
+    box-shadow: 0 4px 12px rgb(244 246 248);
+}
+
+
+.holder-cols-checkout .box-checkout .box-title .desc {
+
+ font-family: 'Roboto', sans-serif;
+
+   line-height: 1.4;
+
+   font-size: 13.5px;
+
+}   
+
+/* TEXTO - 12x NO CARTÃO */
+
+.holder-cols-checkout .cart-resume .detail.total .value:after {
+    content: '';
+    color: #5DE021 !important;
+    display: block;
+     font-weight: 400;
+    font-size: 12px;
+}
+
+
+.mobile-description > div:nth-child(2) > span:nth-child(1) {
+    color: #367eff !important;
+}
+
+/* MENSAGEM PIX */
+
+.pix-desc > p:nth-child(1)::after {
+    content: "ATENÇÃO! O prazo de validade do código PIX é de 30 minutos após gerado. Efetue o pagamento dentro do prazo para garantir seus produtos.";
+    font-size: 13px;
+    color: #03a9f4;
+    background: transparent;
+    border:1px solid #03a9f4;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+
+/* MENSAGEM PIX DEPOIS DO PIX GERADO */
+
+  .-description::after {
+    content: "O nome do favorecido do PIX é Appmax. Esse é o nome da nossa empresa recebedora do pagamento.";
+    
+    font-size: 12px;
+    color: #03a9f4;
+    border:1px solid #03a9f4;
+    background: transparent;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+
+
+.holder-cols-checkout .box-checkout.active .box-title .holder-number {
+    background: linear-gradient(0deg, #000000 0%, #454646 100%);
+    border-radius: 20%;
+  }
+
+  .checkout-step .holder-icon {
+    border-radius: 20%;
+}    
+    .btn-copy-paste {
+    background-color: #36b376;
+}
+
+/*IMAGEM DE COMO PAGAR O PIX APÓS GERAR O PIX - @SABINOSS79*/
+
+.mt25.mb10::before {
+    content: '';
+    background: url(https://i.ibb.co/kgQwWmQf/comopagar.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 130%;
+    margin-left: -35px;
+    margin-top: -18px;
+    height: 367px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 !important;
+    margin-bottom: -185px;
+}
+
+
+.finalization-pix .qr-code .-holder, .finalization-wallet .qr-code .-holder {
+    margin: 0px 0 15px;
+}
+
+/*======= INÍCIO DO CÓDIGO CUSTOMIZADO BANNER NA YAMPI - BY WALLISON DARISVAN =======*/
+header {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://i.ibb.co/HD40qWGp/BANNER-YAMPI-eva-2.png') no-repeat center center !important;
+  background-size: contain !important;
+  background-color: #000000 !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%);
+  position: relative; /* necessário para o ::after funcionar corretamente */
+}
+
+header::after {
+  content: "";
+  display: block;
+  background: linear-gradient(to right, #000000 0%, #FFC107 20%, #FFC107 60%, #FFC107 80%, #000000 100%);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header .logo,
+header .holder-logo,
+header .clearfix {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  header {
+    min-height: 154px;
+    background-size: contain !important;
+  }
+}
+
+@media (max-width: 288px) {
+  header {
+    min-height: 154px;
+  }
+}
+/*======= FIM DO CÓDIGO CUSTOMIZADO BANNER NA YAMPI - BY @guiemanoel =======*/
+/* --- AJUSTE FINAL: REMOVER LINHA TRACEJADA --- */
+
+/* Esta regra mira na área do produto e remove qualquer borda inferior que ela possa ter. */
+.orderbump_product {
+    border-bottom: none !important;
+}
+
+/* Por garantia, miramos na área da descrição e também removemos qualquer borda superior. */
+.orderbump_description {
+    border-top: none !important;
+}
